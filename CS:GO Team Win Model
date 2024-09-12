@@ -1,0 +1,17 @@
+1. Data Preprocessing:
+We cleaned the dataset, converted percentages to numeric values, and handled missing data by imputing missing values with the column means.
+We selected key features related to team performance (e.g., map win rates, player kills, and player ratings).
+2. Model Selection:
+We initially trained three models:
+Logistic Regression: A simple baseline model that achieved 65.98% accuracy.
+Random Forest: A more powerful model that achieved 69.29% accuracy, our best-performing model so far.
+Gradient Boosting: Performed similarly to Random Forest, with 68.88% accuracy.
+3. Model Tuning:
+We started tuning the Random Forest model to further improve its accuracy by optimizing hyperparameters such as the number of trees, tree depth, and split criteria. Though interrupted, this step is key for improving the model further.
+4. Prediction Process:
+The model uses the following features to predict whether Team 1 will win:
+Map win rates: How well each team has historically performed on the map being played.
+Player statistics: Total kills and ratings for key players from both teams.
+The output is a binary classification (win or lose for Team 1), with probabilities indicating how confident the model is in its prediction.
+5. Model Evaluation:
+The best model, Random Forest, achieved an accuracy of 69.29%, meaning that it correctly predicted the outcome of roughly 7 out of 10 matches.
